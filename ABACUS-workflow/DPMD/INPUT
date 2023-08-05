@@ -1,0 +1,24 @@
+INPUT_PARAMETERS
+suffix              DPMD-melting
+calculation         md
+esolver_type        dp
+pot_file            ./frozen_model.pb
+ntype               2
+md_nstep            25000
+md_type             npt
+md_pmode            iso
+md_pcouple          xyz
+md_pfirst           0.001
+md_pfreq            0.0005
+md_pchain           3
+md_tchain           3
+md_dt               2
+md_tfirst           2500
+md_seed             2121491
+md_tfreq            0.005
+md_dumpfreq         1
+md_restartfreq      1000
+init_vel            0
+dump_force          1
+dump_vel            1
+dump_virial         1
