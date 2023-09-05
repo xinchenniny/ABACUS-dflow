@@ -1,0 +1,15 @@
+calculation  msd # Pair Distribution Function.
+system ZnS
+geo_in_type  ABACUS
+geo_directory MD_dump
+geo_1        1
+geo_2        25000
+geo_interval 1
+geo_ignore   5
+ntype        2        # number of different types of atoms.
+natom        216   # total number of atoms.
+natom1       108   #Zn
+natom2       108   #S
+id1          Zn
+id2          S
+msd_dt       0.002
